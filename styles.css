@@ -1,0 +1,399 @@
+/* SKIM colors: teal #35a4ae, dark teal #004e62, orange #ff9000 */
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-variant-numeric: lining-nums;
+  color: #004e62;
+  background: #fff;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.topbar {
+  height: 8px;
+  background: #1c6d7d;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dde8ea;
+}
+
+.brand img {
+  display: block;
+  height: 35px;
+}
+
+/* Language selector */
+.language-select {
+  position: relative;
+  width: 80px;
+  height: 40px;
+}
+
+.language-select-current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  background: #98d3ca;
+  color: #004e62;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.language-select-current-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.language-select-current-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.language-select-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 250px;
+  padding: 10px 20px;
+  background: #004e62;
+  color: #fff;
+  text-align: right;
+}
+
+/* Tap on phones and tablets */
+@media (hover: none) {
+  .language-select.open .language-select-dropdown {
+    display: block;
+  }
+
+  .language-select.open .language-select-current {
+    background: #004e62;
+    color: #fff;
+  }
+}
+
+/* Mouse on computers */
+@media (hover: hover) {
+  .language-select:hover .language-select-dropdown {
+    display: block;
+  }
+
+  .language-select:hover .language-select-current {
+    background: #004e62;
+    color: #fff;
+  }
+}
+
+.language-select-dropdown p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.language-select-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.language-select-dropdown button {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  cursor: pointer;
+}
+
+.language-select-dropdown button:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  padding: 40px 20px;
+  background: #35a4ae;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+/* Content */
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 1px;
+  background: #dde8ea;
+}
+
+/* Cards */
+.card {
+  flex: 1;
+  padding: 25px;
+  border: 1px solid #dde8ea;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Card of the intro and instructions pages */
+.card--page {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff9000;
+}
+
+.step {
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #1c6d7d;
+}
+
+.rules {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.page-text {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.slide-item {
+  margin-top: 20px;
+}
+
+.slide-item h2 {
+  font-size: 17px;
+  color: #1c6d7d;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 0;
+  border-radius: 4px;
+  background: #ff9000;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e08000;
+}
+
+.btn--ghost {
+  background: #fff;
+  color: #004e62;
+  border: 2px solid #dde8ea;
+}
+
+.btn--ghost:hover {
+  background: #e4f3f4;
+}
+
+.actions {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.actions .btn {
+  margin: 0 5px;
+}
+
+.actions--page {
+  margin-bottom: 40px;
+}
+
+/* Forms */
+.field {
+  max-width: 320px;
+  margin: 20px auto 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1c6d7d;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dde8ea;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #004e62;
+}
+
+input:focus {
+  border-color: #35a4ae;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b3261e;
+}
+
+/* Output challenge 1 */
+.result {
+  margin-top: 20px;
+}
+
+.result-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+output {
+  display: block;
+  max-width: 320px;
+  margin: 5px auto 0;
+  padding: 15px;
+  background: #35a4ae;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 24px;
+  color: #fff;
+}
+
+.result-hint {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* Output challenge 2 */
+.console-note {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.console {
+  height: 240px;
+  margin-top: 5px;
+  padding: 15px;
+  overflow-y: auto;
+  background: #004e62;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+  color: #cfe6e9;
+}
+
+.console p {
+  display: flex;
+  gap: 10px;
+}
+
+.idx {
+  width: 35px;
+  text-align: right;
+  color: #6e9aa3;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #004e62;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-logo {
+  margin-top: 15px;
+}
+
+/* Small screens, in this case the two cards go one under the other */
+@media (max-width: 860px) {
+  .layout {
+    display: block;
+  }
+
+  .separator {
+    width: auto;
+    height: 1px;
+    margin: 30px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  output {
+    font-size: 18px;
+  }
+}

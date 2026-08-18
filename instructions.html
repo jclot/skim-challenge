@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKIM challenge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="topbar"></div>
+    <div class="navbar">
+      <div class="brand">
+        <img src="images/logo.svg" alt="SKIM">
+      </div>
+
+      <div class="language-select">
+        <div class="language-select-current">
+          <div class="language-select-current-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+            </svg>
+          </div>
+          <div id="lang-code">en</div>
+        </div>
+
+        <div class="language-select-dropdown">
+          <p data-i18n="dd.title">Choose automatic translation:</p>
+          <ul id="lang-list"></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 data-i18n="p2.h1">Before you begin</h1>
+  </section>
+
+  <!-- Content -->
+  <main>
+    <section class="card card--page">
+      <p class="eyebrow" data-i18n="step.2">Step 2 of 3</p>
+
+      <p class="page-text" data-i18n="p2.intro">On the next page you will see two exercises side by side. Each one asks for a whole number and shows the answer right away.</p>
+
+      <div class="slide-item">
+        <h2 data-i18n="p2.ex1.h">Exercise 1 (Factorial)</h2>
+        <p class="page-text" data-i18n="p2.ex1.text">Type a number between 1 and 18. It is multiplied by every smaller number down to 1. For 4 the answer is 4 × 3 × 2 × 1 = 24.</p>
+      </div>
+
+      <div class="slide-item">
+        <h2 data-i18n="p2.ex2.h">Exercise 2 (SKIM loop)</h2>
+        <p class="page-text" data-i18n="p2.ex2.text">Type a number between 1 and 1000. Every number is listed: multiples of 3 show 'SKIM', multiples of 5 show 'is a great place to work!!', and multiples of both show the full sentence.</p>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn--ghost" href="index.html" data-page="index.html" data-i18n="nav.back">Back</a>
+        <a class="btn" href="challenges.html" data-page="challenges.html" data-i18n="nav.next">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span data-i18n="footer">Technical challenge</span>
+
+    <div class="footer-logo">
+      <svg width="180" height="46" viewBox="0 0 180 46" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <linearGradient id="linearGradient-footer" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="0%" stop-color="#FFFFFF"></stop>
+            <stop offset="100%" stop-color="#366C7C"></stop>
+          </linearGradient>
+        </defs>
+        <path d="M75.293085,39.7713749 C70.3688962,39.7713749 64.9406153,38.4511416 61.0603015,36.3052712 L61.1205502,36.2148981 L64.552764,30.1924795 L64.8032547,30.3242736 C68.258553,32.1436872 71.9654879,33.1453228 75.2415134,33.1453228 C78.7105641,33.1453228 80.7816147,31.9757113 80.7816147,30.017136 C80.7816147,27.8195303 77.5605989,27.079846 73.8310707,26.2235934 C68.2726328,24.947728 61.3548327,23.3599772 61.3548327,16.0481044 C61.3548327,10.3046636 66.917691,6.29386543 74.8821493,6.29386543 C79.3382643,6.29386543 83.6152703,7.17762283 87.9574366,8.99572692 L88.2812736,9.1312866 L85.0984045,15.0986955 L84.8272851,14.9788529 C81.7755552,13.6325882 78.460892,12.9204087 75.2415134,12.9204087 C72.1439421,12.9204087 70.0627409,14.1406095 70.0627409,15.9569127 C70.0627409,18.0921413 73.2290744,18.7987543 76.8955707,19.6175151 C82.5070536,20.870296 89.4903415,22.429396 89.4903415,29.9265991 C89.4903415,35.9989522 84.0502728,39.7713749 75.293085,39.7713749 M137.562454,6.84183431 L129.209326,6.84183431 L129.209326,39.2373222 L137.562454,39.2373222 L137.562454,6.84183431 Z M180,39.2373222 L171.852831,39.2373222 L171.852831,17.9171252 L161.999214,31.194606 L152.193404,17.9207271 L152.193404,39.2373222 L143.959791,39.2373222 L143.959791,6.84183431 L153.620218,6.84183431 L162.04833,18.511263 L170.580731,6.84183431 L180,6.84183431 L180,39.2373222 Z M124.058713,39.4336219 C116.734398,39.4342767 114.457552,37.2070378 107.168273,27.8681549 L106.07872,26.5061731 L101.291237,31.3278736 L101.386194,39.2373222 L93.1851612,39.2373222 L93.1851612,6.84183431 L101.386194,6.84183431 L101.386194,20.2676449 L114.898285,6.84183431 L125.61372,6.84183431 L111.862599,20.7478339 C115.475887,25.3486769 119.628139,30.0397292 122.243556,31.8087175 C123.157274,32.426922 124.820664,32.412351 124.820664,32.412351 L124.826721,32.8961419 L124.835398,39.4224889 L124.60128,39.4287102 C124.41775,39.4318209 124.236349,39.4336219 124.058713,39.4336219" fill="#FFFFFF"></path>
+        <circle cx="20" cy="26" r="16.5" fill="none" stroke="url(#linearGradient-footer)" stroke-width="7"></circle>
+        <circle cx="28" cy="20" r="16.5" fill="none" stroke="#FFFFFF" stroke-width="7"></circle>
+      </svg>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
